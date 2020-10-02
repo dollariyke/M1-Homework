@@ -14,10 +14,9 @@
 /* Ex.A
    Create a variable test that contains a string
 */
-
+const myString = "I am happy to see you";
 /* Ex.B
     Create a variable sum that contains the result of the sum between 10 and 20 
-*/
 
 /* Ex.C 
     Create a variable random that contains a random number between 0 and 20 (should be randomly created at each execution)
