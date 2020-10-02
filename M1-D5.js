@@ -31,6 +31,11 @@ console.log(randomNum);
 /* Ex.D
     Create a variable Me containing and object with the current information: Name = Your Name, Surname = Your Surname, Age = Your Age
 */
+const Me = {
+  name: "Ikemba",
+  Surname: "Nwawom",
+  Age: "34",
+};
 
 /* Ex.E 
     Programmatically remove the Age from the previously create object Me
