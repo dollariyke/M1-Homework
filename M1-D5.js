@@ -17,7 +17,12 @@
 const myString = "I am happy to see you";
 /* Ex.B
     Create a variable sum that contains the result of the sum between 10 and 20 
-
+*/
+let varSum = 0;
+for (let i = 11; i < 20; i++) {
+  varSum = varSum + i;
+}
+console.log(varSum);
 /* Ex.C 
     Create a variable random that contains a random number between 0 and 20 (should be randomly created at each execution)
 */
