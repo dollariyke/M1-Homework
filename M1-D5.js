@@ -73,7 +73,10 @@ console.log(WhoIsBigger(78, 77));
     Write the function SplitMe that receives a String and returns an array with every word in that string
     Ex. SplitMe("I love coding") => returns [ "I","Love","Coding"]
 */
-
+const SplitMe = (str) => {
+  return str.split(" ");
+};
+console.log(SplitMe("I am going to school today"));
 /* Ex.4
     Write the function DeleteOne that receives a string and a boolean. If the boolean is true, should return the string without the first letter, otherwise should remove the last one
 */
