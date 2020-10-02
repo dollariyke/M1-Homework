@@ -40,11 +40,13 @@ const Me = {
 /* Ex.E 
     Programmatically remove the Age from the previously create object Me
 */
-
+delete Me.Age;
 /* Ex.F 
    Programmatically add to the object Me an array "skills" that contains the programming languages that you know
 */
+Me.skills = ["HTML", "CSS", "JavaScript", "SQL"];
 
+console.log(Me);
 /* Ex.G 
    Programmatically remove the last skill from the array "skills" inside of the "me" object
 */
