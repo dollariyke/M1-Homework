@@ -223,33 +223,46 @@ const OlderMovie = () = {
     Write the function OnlyTitles that creates an array with only the titles of the movies
 */
 const OnlyTitles = () = {
-  
+
 }
 /* Ex.15
    Write the function OnlyThisMillennium that returns only the movies produced in this millennium
 */
+const OnlyThisMillennium = () => {
 
+}
 /* Ex.16 
     Write the function GetMovieById that receives an ID and returns the movie with the given ID
 */
+const GetMovieById = () =>{
 
+}
 /* Ex.17
     Write the function SumYears that returns the sum of the years the movie has been produced
 */
+const SumYears = () => {
+
+}
 
 /* Ex.18
     Write the function SearchMovie that receives a string and returns all the movies with that string in the title
 */
+  const SearchMovie = () =>{
 
+  }
 /* Ex.19
     Write the function SearchAndDivide that receives a string and returns an object with an array "match" with all the movies that contains the title and another array "nonMatch" with the other movies
 */
+    const SearchAndDivide =()=> {
 
+    }
 /* Ex.20
    Write the function DeleteX that receives a number and returns an array without the element in that position
 */
+ const DeleteX = () =>{
 
-// JS Advanced
+ }
+ // JS Advanced
 
 /* Ex.21
   Create a function HalfTree that recives the height creates an "*" half tree with that height
@@ -259,7 +272,9 @@ const OnlyTitles = () = {
   **
   ***
 */
-
+ const HalfTree = () =>{
+   
+ }
 /* Ex.22 
   Create a function Tree that receives the height and creates an "*" tree with that height
   Example: 
@@ -268,7 +283,9 @@ const OnlyTitles = () = {
    *** 
   *****
 */
+ const Tree = () => {
 
+ }
 /* Ex.23
   Create a function IsItPrime that receives a number and return true if the number is a prime number
 */
