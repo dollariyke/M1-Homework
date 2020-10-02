@@ -80,20 +80,76 @@ console.log(SplitMe("I am going to school today"));
 /* Ex.4
     Write the function DeleteOne that receives a string and a boolean. If the boolean is true, should return the string without the first letter, otherwise should remove the last one
 */
+const DeleteOne = (str, bol) => {
+  let word;
+  if (bol) {
+    word = str.slice(1);
+  } else {
+    word = str.slice(0, str.length - 1);
+  }
+  return word;
+};
 
+console.log(DeleteOne("striver", true));
 /* Ex.5
    Write the function OnlyLetters that receives a string, removes all the numbers and returns it.
    Ex.: OnlyLetters("I love 123 whatever")  => returns "I love whatever"
+*/
+/*
+const OnlyLetters = (str) => {
+  const splitStr = str.split(" ");
+
+  for (let i = 0; i < splitStr.length; i++) {
+    if (typeOf(parseInt(splitStr[i])) === "Number") {
+    }
+  }
+};
+console.log(
+  OnlyLetters("I love 123 whatever")
+);
 */
 
 /* Ex.6 
    Write the function IsThisAnEmail that receives a string and returns true if the string is a valid email.
 */
-
+const IsThisAnEmail = () => {};
 /* Ex.7
    Write the function WhatDayIsIt that should return the day of the week
 */
+const WhatDayIsIt = () => {
+  const myDate = new Date();
+  const day = myDate.getDay();
+  let weekDay;
+  switch (day) {
+    case 0:
+      weekday = "Sunday";
+      break;
+    case 1:
+      weekday = "Monday";
+      break;
+    case 2:
+      weekday = "Tuesday";
+      break;
+    case 3:
+      weekday = "Wednesday";
+      break;
+    case 4:
+      weekday = "Thursday";
+      break;
+    case 5:
+      weekday = "Friday";
+      break;
+    case 6:
+      weekday = "Saturday";
+      break;
 
+    default:
+      return "out of range";
+      break;
+  }
+  return weekday;
+};
+console.log(WhatDayIsIt());
 /* Ex.8
     Write the function RollTheDices that receives a numeric input and returns an object that contains both the sum of the value of the dices and the dices itself
     This function should use the Dice function defined in Ex1
@@ -102,14 +158,40 @@ console.log(SplitMe("I am going to school today"));
         values: [ 3, 3, 4]
     }
 */
+const RollTheDices = (n) => {
+  const myObj = {};
+  let add;
+  let opt = [];
 
+  for (let i = 0; i < n; i++) {
+    let diceRoll = Dice(1, 6);
+    opt.push(diceRoll);
+    add = opt.reduce((a, b) => a + b, 0);
+  }
+  myObj.sum = add;
+  myObj.roll = opt;
+  return myObj;
+};
+console.log(RollTheDices(3));
 /* Ex.9
    Write the function HowManyDays that receives a Date and return the number of days that has passed since that day.
 */
+const HowManyDays = (date) => {
+  let todaysDate = new Date(10 / 2 / 2020);
+  todaysDate.toLocaleDateString("en-US");
+  let previousDate = new Date(date);
+  previousDate.toLocaleDateString("en-US");
+  let dateDiff = todaysDate.getTime() - previousDate.getTime();
+  return dateDiff / 24;
+};
+console.log(HowManyDays(09 / 30 / 2020));
 
 /* Ex.10
    Write the function IsTodayMyBDay that returns true if it's your birthday, false otherwise
 */
+const IsTodayMyBDay = () => {
+
+};
 
 // JS Arrays // Objs
 // NOTE: movies array is defined at the end of the file
@@ -118,18 +200,31 @@ console.log(SplitMe("I am going to school today"));
    Write the function DeleteProp that receives an object and a string, and returns the object after deleting the property with that given name
 */
 
+const DeleteProp = (obj, str) => {
+  delete obj.str;
+  return obj;
+};
+
+console.log(DeleteProp({ name: "ikemba", age: 25 }, "age"));
+
 /* Ex.12 
     Write the function OlderMovie that finds the older movie in the array
 */
+const OlderMovie = () = {
 
+}
 /* Ex.13
     Write the function CountMovies that returns the number of movies into the array
 */
+ const CountMovies = () = {
 
+ }
 /* Ex.14
     Write the function OnlyTitles that creates an array with only the titles of the movies
 */
-
+const OnlyTitles = () = {
+  
+}
 /* Ex.15
    Write the function OnlyThisMillennium that returns only the movies produced in this millennium
 */
