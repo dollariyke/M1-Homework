@@ -59,13 +59,6 @@ console.log(boundary(101));
 Write a function "strivify" which accepts a string S. Add to S "Strive" in front of a given string, if the given string begins with "Strive" then return the original string.
 
 /* WRITE YOUR CODE HERE */
-
-/* EXERCISE 6
-Write a function "check3and7" which accepts a positive number and check if it is a multiple of 3 or a multiple of 7.
-HINT: Module Operator
-*/
-
-/* WRITE YOUR CODE HERE */
 const strivify = (S) => {
   if (S.slice(0, 6) === "Strive") {
     return S;
@@ -73,8 +66,29 @@ const strivify = (S) => {
     return "Strive" + S;
   }
 };
-
 console.log(strivify("boy is coming"));
+/* EXERCISE 6
+Write a function "check3and7" which accepts a positive number and check if it is a multiple of 3 or a multiple of 7.
+HINT: Module Operator
+*/
+
+/* WRITE YOUR CODE HERE */
+const check3and7 = (num) => {
+  if (num > 0) {
+    if (num % 3 === 0 && num % 7 === 0) {
+      console.log(num + " is a multiple of three and seven");
+    } else if (num % 3 === 0) {
+      console.log(num + " is a multiple of 3");
+    } else if (num % 7 === 0) {
+      console.log(num + " is a multiple of 7");
+    } else {
+      console.log(num + " is not a multiple of 3 or 7");
+    }
+  } else {
+    console.log(num + " is not positive.");
+  }
+};
+console.log(check3and7(28));
 /* EXERCISE 7
 Write a function "reverseString" to reverse programmatically a given string (es.: Strive => evirtS).
 */
@@ -87,36 +101,45 @@ console.log(reverseString("Jerusalem"));
 /* EXERCISE 8
 Write a function "upperFirst" to capitalize the first letter of each word of a given string passed as parameter
 */
-/*"const upperFirst = (str) => {
-  const splitWord = str.split(" ");
-  for (let i = 0; i < splitWord.length; i++) {
-    const myWord = [];
-    myWord.push(splitWord[i].charAt(0).toUpperCase());
-  }
-  return myWord;
-}";*/
 
 /* WRITE YOUR CODE HERE */
+const upperFirst = (str) => {
+  const splitWord = str.split(" ");
+  const myWord = [];
+  for (let i = 0; i < splitWord.length; i++) {
+    myWord.push(
+      splitWord[i].charAt(0).toUpperCase().concat("", splitWord[i].substr(1))
+    );
+  }
+  const x = myWord.join(" ");
+  console.log(x);
+};
+
+upperFirst("do you have food to eat today?");
 
 /* EXERCISE 9
 Write a function "cutString" to create a new string without the first and last character of a given string.
 */
+/* WRITE YOUR CODE HERE */
 const cutString = (str) => {
   return str.slice(1, str.length - 1);
 };
 console.log(cutString("strive"));
-/* WRITE YOUR CODE HERE */
 
 /* EXERCISE 10
 Write a function "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10
 */
+
+/* WRITE YOUR CODE HERE */
+const randomNum = [];
 const giveMeRandom = (n) => {
-  return Math.floor(Math.random() * n);
+  for (let i = 0; i < n; i++) {
+    randomNum.push(Math.floor(Math.random() * 10));
+  }
+  return randomNum;
 };
 
-console.log(giveMeRandom(25));
-/* WRITE YOUR CODE HERE */
-
+console.log(giveMeRandom(5));
 /* WHEN YOU ARE FINISHED
 Commit and push the code to your personal GitHub repository and share the link to your commit with your tutor.
 */
