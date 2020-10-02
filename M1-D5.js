@@ -52,10 +52,15 @@ console.log(Me);
 */
 delete Me.skills[3];
 console.log(Me);
+
 // JS Functions
 /* Ex.1
     Write the function Dice that randomize an integer number between 1 and 6
 */
+const Dice = (min, max) => {
+  return Math.floor(Math.random() * max) + 1;
+};
+console.log(Dice(1, 6));
 
 /* Ex.2 
     Write the function WhoIsBigger that receives 2 numbers and returns the bigger of the 2
