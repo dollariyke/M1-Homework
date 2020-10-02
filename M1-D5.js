@@ -50,7 +50,8 @@ console.log(Me);
 /* Ex.G 
    Programmatically remove the last skill from the array "skills" inside of the "me" object
 */
-
+delete Me.skills[3];
+console.log(Me);
 // JS Functions
 /* Ex.1
     Write the function Dice that randomize an integer number between 1 and 6
