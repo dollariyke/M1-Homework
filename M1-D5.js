@@ -26,7 +26,8 @@ console.log(varSum);
 /* Ex.C 
     Create a variable random that contains a random number between 0 and 20 (should be randomly created at each execution)
 */
-
+const randomNum = Math.floor(Math.random() * 20);
+console.log(randomNum);
 /* Ex.D
     Create a variable Me containing and object with the current information: Name = Your Name, Surname = Your Surname, Age = Your Age
 */
