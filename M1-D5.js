@@ -65,7 +65,10 @@ console.log(Dice(1, 6));
 /* Ex.2 
     Write the function WhoIsBigger that receives 2 numbers and returns the bigger of the 2
 */
-
+const WhoIsBigger = (a, b) => {
+  return Math.max(a, b);
+};
+console.log(WhoIsBigger(78, 77));
 /* Ex.3
     Write the function SplitMe that receives a String and returns an array with every word in that string
     Ex. SplitMe("I love coding") => returns [ "I","Love","Coding"]
