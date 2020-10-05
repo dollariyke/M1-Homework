@@ -1,0 +1,36 @@
+img {
+  width: 100px;
+  height: 100px;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+table {
+  width: 1000px;
+  height: auto;
+}
+td {
+  font-size: 12px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.tab,
+.message,
+#googleMap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 15px;
+}
+footer {
+  text-align: center;
+}
