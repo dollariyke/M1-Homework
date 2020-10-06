@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="M1-D6/style.css">
+
+  </head>
+    <!--
+        You have been assigned to the creation of a Smartphone Shop Website.
+        The shop is just a showcase of the products of the shop with some extra informations.
+        No shopping cart / checkout features are required.
+        EX1.:
+        Add H1 title with the name of the shop
+        EX2.: 
+        Add a TABLE with the top 5 products of the shop
+        EX3.: 
+        Each product should have one image, title, description and price
+        EX4.:
+        Add Map to the shop 
+        EX5.: 
+        Add the links to Amazon products for each item in the table
+        EX6.:
+        Add a footer with the address and the name of the shop
+        EX7.: 
+        Add a message board where the user can type a message in it (only client side)
+        // EXTRA 
+        EX8.: 
+        Write a function to change the heading text
+        EX9.:
+        Write a function to change the page background color
+        EX10.:
+        Write a function to change the footer address with a fake one
+    -->
+
+  <body>
+
+    
+    <h1>LA NATHAN SHOP</h1>
+    <div class="tab">
+      <table>
+        <thead>
+          <tr>
+            <th>Image</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <td><img src="M1-D6/image/iphone11.jpg" alt="" /></td>
+          <td><a href="https://www.amazon.com/s?k=iphone&ref=nb_sb_noss_2">iphone11</a></td>
+          <td>The iPhone X has to be one of the most-talked about tech products of 2017, and introduces a brand new paradigm for interaction, with gestures replacing buttons and a larger screen than on any previous iPhone. It shares most of its internals with the iPhone 8 and iPhone 8 Plus, including Apple’s own A11 Bionic chip and support for wireless charging. However, the 5.8-inch AMOLED panel is a first for any iPhone. Overall, the iPhone X display is great. The notch at the top contains the front camera and 3D sensors that make Face ID recognition possible. It works seamlessly and reliably on most</td>
+          <td>AED3500</td>
+        </tr>
+        <tr>
+          <td><img src="M1-D6/image/iphone7.jpg" alt="" /></td>
+          <td><a href="https://www.amazon.com/s?k=iphone&ref=nb_sb_noss_2">iphone7</a></td>
+          <td>The iPhone X has to be one of the most-talked about tech products of 2017, and introduces a brand new paradigm for interaction, with gestures replacing buttons and a larger screen than on any previous iPhone. It shares most of its internals with the iPhone 8 and iPhone 8 Plus, including Apple’s own A11 Bionic chip and support for wireless charging. However, the 5.8-inch AMOLED panel is a first for any iPhone. Overall, the iPhone X display is great. The notch at the top contains the front camera and 3D sensors that make Face ID recognition possible. It works seamlessly and reliably on most</td>
+          <td>AED3700</td>
+        </tr>
+        <tr>
+          <td><img src="M1-D6/image/iphoneSE.jpg" alt="" /></td>
+          <td><a href="https://www.amazon.com/s?k=iphone&ref=nb_sb_noss_2">iphoneSE</a></td>
+          <td>The iPhone X has to be one of the most-talked about tech products of 2017, and introduces a brand new paradigm for interaction, with gestures replacing buttons and a larger screen than on any previous iPhone. It shares most of its internals with the iPhone 8 and iPhone 8 Plus, including Apple’s own A11 Bionic chip and support for wireless charging. However, the 5.8-inch AMOLED panel is a first for any iPhone. Overall, the iPhone X display is great. The notch at the top contains the front camera and 3D sensors that make Face ID recognition possible. It works seamlessly and reliably on most</td>
+          <td>AED4000</td>
+        </tr>
+        <tr>
+          <td><img src="M1-D6/image/iphoneX.jpg" alt="" /></td>
+          <td><a href="https://www.amazon.com/s?k=iphone&ref=nb_sb_noss_2">iphoneX</a></td>
+          <td>The iPhone X has to be one of the most-talked about tech products of 2017, and introduces a brand new paradigm for interaction, with gestures replacing buttons and a larger screen than on any previous iPhone. It shares most of its internals with the iPhone 8 and iPhone 8 Plus, including Apple’s own A11 Bionic chip and support for wireless charging. However, the 5.8-inch AMOLED panel is a first for any iPhone. Overall, the iPhone X display is great. The notch at the top contains the front camera and 3D sensors that make Face ID recognition possible. It works seamlessly and reliably on most</td>
+          <td>AED2500</td>
+        </tr>
+        <tr>
+          <td><img src="M1-D6/image/iphoneXR.jpg" alt="" /></td>
+          <td><a href="https://www.amazon.com/s?k=iphone&ref=nb_sb_noss_2">iphoneXR</a></td>
+          <td>The iPhone X has to be one of the most-talked about tech products of 2017, and introduces a brand new paradigm for interaction, with gestures replacing buttons and a larger screen than on any previous iPhone. It shares most of its internals with the iPhone 8 and iPhone 8 Plus, including Apple’s own A11 Bionic chip and support for wireless charging. However, the 5.8-inch AMOLED panel is a first for any iPhone. Overall, the iPhone X display is great. The notch at the top contains the front camera and 3D sensors that make Face ID recognition possible. It works seamlessly and reliably on most</td>
+          <td>AED2800</td>
+        </tr>
+    </tbody>
+    <tr>
+      </table>
+    </div>
+    <div class="message">
+    <label for="texta">Enter Message</label> 
+    <textarea name="texta" id="texta" cols="30" rows="10"></textarea>
+   </div>
+   Add the following html snippet to your page:
+   <h2 id="listTitle">Todo List</h2>
+   <ul id="firstList">
+       <li><p>1st</p></li>
+       <li>2nd</li>
+       <li>3rd</li>
+   </ul>
+   <ul id="secondList">
+       <li>1st</li>
+       <li>2nd</li>
+       <li>3rd</li>
+   </ul>
+   <div>
+       <p>This text is just for the exercise</p>
+   </div>
+  <div id="googleMap" style="width:100%;height:400px;">
+
+    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1Scq50LgcR26Imx3BxtKBLhYaTF4&hl=en&ie=UTF8&oe=UTF8&msa=0&t=m&ll=25.272395081346893%2C55.31565092723082&spn=0%2C0&output=embed&z=16" 
+    width="600" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+  
+  </div>
+    <footer>
+      <P>Mezie smartphone shop</P>
+      <address> 512 Street Almuteena Diera, Dubai United Arab Emirates</address>
+    </footer>
+  </body>
+
+  <!-- Starting from D6's exercise, use your Smartphone Shop Website and implement the following exercises-->
+<script>
+  /*EXERCISE 1 
+       Create a new welcome alert message when the page successfully loads
+      */
+    window.onload = function () {
+      alert("You are welcome to our site");
+    };
+    /* EXERCISE 2
+        Write a function to change the Title of the page in something else (execute the function in browser console)
+    */
+    const changeTitle = function (newTitle) {
+      document.title = newTitle;
+    };
+    changeTitle("DOM manipulation");
+    /* EXERCISE 3a
+        Write a function to add a class to the page's h1 title in "red-color" (execute the function when title is hovered by mouse).
+    */
+    let h1title = document.querySelector("h1");
+    const addClassToTitle = function () {
+      h1title.classList.add("red-color");
+    };
+    addClassToTitle();
+ 
+    /* EXERCISE 3b
+        Write a function to remove "red-color" class from previous h1 (execute the function when the mouse leaves the title).
+    */
+    
+    const removeClassFromTitle = function () {
+      h1title.classList.remove("red-color");
+    };
+    removeClassFromTitle();
+    /* 
+    Write a function to change the text of only the p which are child of a div (execute the function by assigning it to a button's click event)
+    */
+    let divChild = document.querySelector("div.p")
+    const changePContent = function () {
+      
+    };
+    /* EXERCISE 5
+        Write a function to change the list title (you can use previous day's textarea as input or create a new text input field to grab the content)
+    */
+    const changeListTitle = function (content) {};
+    /* EXERCISE 6
+         Write a function to add a new item ONLY to the second list (create an input field + add button)
+    */
+    const addToTheSecond = function (content) {};
+    /* EXERCISE 7
+        Write a function to make the first UL disappear (button)
+    */
+    const firstUlDisappear = function () {};
+    /* EXERCISE 8
+        Write a function to make the background of every UL green (button)
+    */
+    const paintItGreen = function () {};
+  
+    /* EXERCISE 9
+        Add a "magnifier function" to the table.
+        When the user mouse goes on a table cell (not the image one) the font size must increase.
+        HINT use mouseenter / mouseleave events
+    */
+    const makeThemMagnifiable = function () {};
+    /* EXERCISE 10
+        Add a button to toggle all the product images (toggle => if visible, hide, if not visible, show)
+    */
+    const toggleShowImages = function () {};
+  
+    //##### EXTRA
+  
+    /* EXERCISE 11
+        Make the heading of the page change color radomly every time the user clicks on it
+        */
+    const makeItClickable = function () {};
+  
+    /*EXERCISE 12
+      Refactor your HTML code with HTML5 semantic tags such as header, section, footer, etc
+  */
+  </script>
+
+
+
+</html>
+
+
